@@ -1,6 +1,8 @@
 # fs
 a fuzzy search for files and diretories
 
+[![PyPI](https://pypi.org/project/fs/)](https://pypi.org/project/fs/)
+
 > [!NOTE]
 > *this app is only available on Linux and MacOS*
 
