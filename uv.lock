@@ -16,11 +16,15 @@ name = "fs"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "colorama" },
     { name = "pytest" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pytest", specifier = ">=8.4.1" }]
+requires-dist = [
+    { name = "colorama", specifier = ">=0.4.6" },
+    { name = "pytest", specifier = ">=8.4.1" },
+]
 
 [[package]]
 name = "iniconfig"
