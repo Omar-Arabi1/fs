@@ -1,7 +1,7 @@
 # fs
 a fuzzy search for files and diretories
 
-## searching
+## searching:
 to start the fuzzy search use the `fs` command it takes two arguments a directory to search in it's contents
 and a pattern to search with, example
 
@@ -17,4 +17,13 @@ it will be printed to the console
 
 > [!NOTE]
 > *by default the application doesn't search through hidden entries as well, if you want it to search through hidden entries*
-> *use the [hidden](#hidden-option) option*
+> *use the [hidden](#hidden-flag) option*
+
+## hidden flag:
+the hidden flag allows you to see through hidden entries as well as non-hidden entries, example
+
+    fs . gi --hidden/-H
+
+in this example it will search through all the files in the given directory and any file that has 'gi' in its
+name will be printed to the console, but because we included the `--hidden` flag it will also print hidden
+entries that have 'gi' in their name
