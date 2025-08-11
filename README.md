@@ -1,7 +1,7 @@
 # pff
 a fuzzy finder for files and diretories
 
-[![PyPI](https://img.shields.io/pypi/v/pff)](https://pypi.org/project/pff)
+[![PyPI Version](https://img.shields.io/pypi/v/pff)](https://pypi.org/project/pff)
 
 > [!NOTE]
 > *this app is only available on Linux and MacOS*
