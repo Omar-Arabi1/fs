@@ -10,9 +10,9 @@ def fuzzy_search(dir: str, pattern: str, filter_by: str, hidden: bool) -> list[s
     entries = os.listdir(dir)
 
     if filter_by == "files":
-        entries = filter(lambda entry: os.path.isfile(entry), entries)
+        entries = filter(lambda entry: os.path.isfile(os.path.join(dir, entry)), entries)
     elif filter_by == "dirs":
-        entries = filter(lambda entry: os.path.isdir(entry), entries)
+        entries = filter(lambda entry: os.path.isdir(os.path.join(dir, entry)), entries)
     elif filter_by != "":
         print(f"invalid option for filter", file=sys.stderr)
         sys.exit(1)
