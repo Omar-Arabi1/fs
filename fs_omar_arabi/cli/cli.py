@@ -11,5 +11,6 @@ class Cli:
         parser.add_argument("-v", "--version", action="version", version=f"%(prog)s v{self.version}")
         parser.add_argument("dir", type=str, help="the directory to search in")
         parser.add_argument("pattern", type=str, help="the pattern to search for in the file name")
+        parser.add_argument("-f", "--filter", type=str, help="filter on wether you want to see fiels only or dirs only", required=False, default="")
 
         return parser.parse_args()
