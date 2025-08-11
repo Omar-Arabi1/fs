@@ -18,6 +18,8 @@ def fuzzy_search(dir: str, pattern: str, filter_by: str, hidden: bool) -> list[s
         sys.exit(1)
 
     for entry in entries:
+        if entry.startswith(".") and not hidden:
+            continue
         if pattern in entry:
             matches.append(entry)
     
