@@ -1,6 +1,6 @@
 [project]
 name = "pff"
-version = "1.0.0"
+version = "1.0.1"
 description = "a fuzzy search for files and diretories"
 readme = "readme_for_pypi.md"
 requires-python = ">=3.13"
