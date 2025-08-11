@@ -1,9 +1,10 @@
 import sys
 import os
+from colorama import Fore
 
 def fuzzy_search(dir: str, pattern: str, filter_by: str, hidden: bool) -> list[str]:
     if not os.path.exists(dir) or os.path.isfile(dir):
-        print(f"{dir} is invalid", file=sys.stderr)
+        print(Fore.RED + f"{dir} is invalid", file=sys.stderr)
         sys.exit(1)
     
     matches = []
@@ -14,7 +15,7 @@ def fuzzy_search(dir: str, pattern: str, filter_by: str, hidden: bool) -> list[s
     elif filter_by == "dirs":
         entries = filter(lambda entry: os.path.isdir(os.path.join(dir, entry)), entries)
     elif filter_by != "":
-        print(f"invalid option for filter", file=sys.stderr)
+        print(Fore.RED + f"invalid option for filter", file=sys.stderr)
         sys.exit(1)
 
     for entry in entries:

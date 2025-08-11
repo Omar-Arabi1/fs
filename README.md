@@ -20,7 +20,7 @@ it will be printed to the console
 
 > [!NOTE]
 > *by default the application doesn't search through hidden entries as well, if you want it to search through hidden entries*
-> *use the [hidden](#hidden-flag) option*
+> *use the [hidden](#hidden-flag) flag*
 
 ## hidden flag:
 the hidden flag allows you to see through hidden entries as well as non-hidden entries, example
@@ -41,9 +41,18 @@ options `files` to search through files only or `dirs` to search through directo
     fs . gi --filter/-f files
 
 in this example it will search through all the entries in the given directory, and check if the given pattern
-is in the name of the entry, but it will only search through files because we used the filter option with files
+is in the name of the entry, but it will only search through files because we used the filter option with `files`
 so no directories will be taken account of
 
 > [!TIP]
 > *this option is helpful if you are looking for a specific file or directory, but not both and don't know the exact name*
 > *because it allows you to get less results that may be irrelevant*
+
+## installation:
+the tool is available on PyPI to install it run
+
+    pipx install fs
+
+> [!TIP]
+> *you can install the tool with pip and not pipx, but it is not recommended as pip is usually used for libraries*
+> *to help with projects while this is a cli tool and not a library*
