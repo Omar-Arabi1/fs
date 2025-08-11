@@ -1,6 +1,9 @@
 # fs
 a fuzzy search for files and diretories
 
+> [!NOTE]
+> *this app is only available on Linux and MacOS*
+
 ## searching:
 to start the fuzzy search use the `fs` command it takes two arguments a directory to search in it's contents
 and a pattern to search with, example
@@ -24,6 +27,23 @@ the hidden flag allows you to see through hidden entries as well as non-hidden e
 
     fs . gi --hidden/-H
 
-in this example it will search through all the files in the given directory and any file that has 'gi' in its
+in this example it will search through all the entries in the given directory and any entry that has 'gi' in its
 name will be printed to the console, but because we included the `--hidden` flag it will also print hidden
 entries that have 'gi' in their name
+
+> [!TIP]
+> *if you want to look through files only or through directories only use the [filter](#filter-option) option*
+
+## filter option:
+the filter option allows you to filter your search for files only or directories only it takes in one of two
+options `files` to search through files only or `dirs` to search through directories only, example
+
+    fs . gi --filter/-f files
+
+in this example it will search through all the entries in the given directory, and check if the given pattern
+is in the name of the entry, but it will only search through files because we used the filter option with files
+so no directories will be taken account of
+
+> [!TIP]
+> *this option is helpful if you are looking for a specific file or directory, but not both and don't know the exact name*
+> *because it allows you to get less results that may be irrelevant*
