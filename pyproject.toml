@@ -18,4 +18,4 @@ maintainers = [
 pff = "pff_omar_arabi.__main__:main"
 
 [project.urls]
-Repository = "https://github.com/Omar-Arabi1/fs"
+Repository = "https://github.com/Omar-Arabi1/pff"
