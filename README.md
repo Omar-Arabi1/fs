@@ -9,12 +9,12 @@ and a pattern to search with, example
 
 > [!NOTE]
 > *the '.' in the first argument is the directory it stands for current working directory, use it to search within the directory you are*
-> *already in*
+> *running the tool from*
 
 in this example it loops through all the contents of the given directory '.' (current working directory) and searches
 for entries that start with the given pattern 'gi' if it finds any file or directory with this pattern in their name
 it will be printed to the console
 
-> ![NOTE]
+> [!NOTE]
 > *by default the application doesn't search through hidden entries as well, if you want it to search through hidden entries*
 > *use the [hidden](#hidden-option) option*
