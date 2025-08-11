@@ -1,16 +1,16 @@
-# fs
-a fuzzy search for files and diretories
+# pff
+a fuzzy finder for files and diretories
 
-[![PyPI](https://pypi.org/project/fs/)](https://pypi.org/project/fs/)
+[![PyPI](https://img.shields.io/pypi/v/pff)](https://pypi.org/project/pff)
 
 > [!NOTE]
 > *this app is only available on Linux and MacOS*
 
 ## searching:
-to start the fuzzy search use the `fs` command it takes two arguments a directory to search in it's contents
+to start the fuzzy search use the `pff` command it takes two arguments a directory to search in it's contents
 and a pattern to search with, example
 
-    fs . gi
+    pff . gi
 
 > [!NOTE]
 > *the '.' in the first argument is the directory it stands for current working directory, use it to search within the directory you are*
@@ -27,7 +27,7 @@ it will be printed to the console
 ## hidden flag:
 the hidden flag allows you to see through hidden entries as well as non-hidden entries, example
 
-    fs . gi --hidden/-H
+    pff . gi --hidden/-H
 
 in this example it will search through all the entries in the given directory and any entry that has 'gi' in its
 name will be printed to the console, but because we included the `--hidden` flag it will also print hidden
@@ -40,7 +40,7 @@ entries that have 'gi' in their name
 the filter option allows you to filter your search for files only or directories only it takes in one of two
 options `files` to search through files only or `dirs` to search through directories only, example
 
-    fs . gi --filter/-f files
+    pff . gi --filter/-f files
 
 in this example it will search through all the entries in the given directory, and check if the given pattern
 is in the name of the entry, but it will only search through files because we used the filter option with `files`
@@ -53,7 +53,7 @@ so no directories will be taken account of
 ## installation:
 the tool is available on PyPI to install it run
 
-    pipx install fs
+    pipx install pff
 
 > [!TIP]
 > *you can install the tool with pip and not pipx, but it is not recommended as pip is usually used for libraries*
